@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RAHIM Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ads-banner">
+        <div class="scroll-text">
+            🔔 NEW UPDATES | Join Kellash Studio today and unlock unlimited entertainment, creativity, and opportunities to showcase your talent without limits! 🔔
+        </div>
+    </div>
+        <header>
+        <nav class="center">
+            <!-- Logo ya studio upande wa kushoto -->
+          
+            
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <!-- Kumbuka: element za <li> hazikuwa zimefungwa vizuri -->
+                <li><a href="index.html"style="font-size: 19px;">HOME</a></li>
+              
+               <li class="dropdown">
+        <a href="services.html"style="font-size: 19px;">SERVICES ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="music.html"style="font-size: 12px;">🎵 Music Production</a></li>
+          <li><a href="movie.html"style="font-size: 12px;">🎬 Movie & Video Production</a></li>
+          <li><a href="graphic.html"style="font-size: 12px;">🎨 Graphic Design</a></li>
+          <li><a href="motion.html"style="font-size: 12px;">🌈 Motion Graphics</a></li>
+          <li><a href="digital-marketing.html"style="font-size: 12px;">📢 Digital Marketing</a></li>
+          <li><a href="merchandise.html"style="font-size: 12px;">🛍️ Online Merchandise</a></li>
+          <li><a href="talent-management.html"style="font-size: 12px;">🎤 Talent Management</a></li>
+          <li><a href="podcast.html"style="font-size: 12px;">🎙️ Podcast Production</a></li>
+          <li><a href="photography.html"style="font-size: 12px;">📸 Photography</a></li>
+          <li><a href="distribution.html"style="font-size: 12px;">📈 Music Distribution</a></li>
+         
+        </ul>
+      </li>
+      <li class="dropdown"><a href="promoting.html" style="font-size: 19px;">UPDATES</a></li>
+                <li class="dropdown"><a href="contact.html" style="font-size: 19px;">CONTACT US</a></li>
+
+                <!-- Settings icon (vidoti vitatu) kulia -->
+            <div class="settings">
+                <div class="dot-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="dropdown-settings">
+                    <a href="join.html">JOIN US</a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="help.html">HELP</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+<center><h1>CONTACT US</h1></center>
+
+  <style>
+    
+
+   
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: hsl(0, 8%, 3%);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: hsl(189, 88%, 45%);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <h2>Get in Touch</h2>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong>akwizkellash001@gmail.com</p>
+      <p><strong>Phone:</strong> +255 784 800 125</p>
+      <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+    </div>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xeolnwzr"
+  method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input
+      id="phone"
+      name="phone"
+      type="text"
+      inputmode="tel"
+      autocomplete="tel"
+      placeholder="+255784800125"
+      maxlength="15"
+      aria-describedby="phoneHint phoneError"
+      required
+    />
+    <div id="phoneHint" class="hint">Anza na <code>+</code>, kisha hadi <strong>14</strong> tarakimu. Mfano: <code>+255712345678</code></div>
+    <div id="phoneError" class="error" role="alert" aria-live="polite" style="display:none"></div>
+
+      <input type="text" name="order" placeholder="Service you want (e.g., Photoshop,Videography,Music Recording,Designing)" required />
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+    <script>
+    const form = document.getElementById('contactForm');
+    const phone = document.getElementById('phone');
+    const phoneError = document.getElementById('phoneError');
+
+    // Helpful message if invalid
+    function validatePhone() {
+      // pattern: starts with + then 1–14 digits
+      const re = /^\+\d{1,14}$/;
+      const val = phone.value.trim();
+      if (!val) {
+        phoneError.textContent = 'Namba ya simu ni lazima.';
+        return false;
+      }
+      if (!re.test(val)) {
+        phoneError.textContent = 'Tafadhali weka namba iliyoanza na + na isiyozidi digits 14 (mfano +255712345678).';
+        return false;
+      }
+      phoneError.textContent = '';
+      return true;
+    }
+
+    phone.addEventListener('input', () => {
+      // Enforce maxlength client-side visually
+      if (phone.value.length > 15) phone.value = phone.value.slice(0, 15);
+      validatePhone();
+    });
+
+    form.addEventListener('submit', (e) => {
+      if (!validatePhone()) {
+        e.preventDefault();
+        phone.focus();
+      } else {
+        // hapa unaweza kuruhusu form itumie kawaida au tuma via fetch/AJAX
+        // e.preventDefault(); // ikiwa utatumia fetch, ota hii
+        // sendFormWithFetch();
+      }
+    });
+  </script>
+
+    <!-- Optional Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.01589114684!2d39.2650021!3d-6.7923546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c779121340f%3A0x91a0c0d0c01c682c!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1719229160256!5m2!1sen!2stz"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+
+</body>
+</html>
